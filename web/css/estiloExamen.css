@@ -1,0 +1,75 @@
+.banner {
+    background: url(../images/exam.jpg)no-repeat;
+    min-height:345px;
+    background-size: cover;
+}
+.header-main {
+    padding: 1em 0em;
+}
+span.books {
+    background: url(../images/two-books.png)no-repeat 0px 4px;
+    width: 50px;
+    height: 47px;
+    display: inline-block;
+    vertical-align:top;
+}
+.logo {
+    float: left;
+    width: 40%;
+    align-content: center;
+}
+.logo h1{
+    font-size: 2.7em;
+    font-family: 'Marvel', sans-serif;
+
+}
+.logo h1 a {
+    color: #0B610B;
+}
+.logo h1 {
+    font-size: 2em;
+}
+.unico {
+  background: #A9F5D0;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+  width: 300px;
+  padding-left:  650px;
+  padding-right: 650px;
+  margin-left:   30px;
+  margin-right:  15px;
+  border: 3px solid black;
+
+
+}
+.footer {
+    padding:4em 0em;
+    background: #000;
+}
+.ftr-address {
+    margin-bottom:1em;
+}
+.ftr-text {
+    width: 93%;
+}
+.ftr-grid {
+    margin-bottom: 1.5em;
+}
+.contact-address ul li p {
+    font-size: 0.9em;
+    padding-top: 0.3em;
+}
+.contact-address h3 {
+    font-size: 2em;
+    color: #f2af00;
+    margin-bottom: 0.5em;
+    font-family: 'Marvel', sans-serif;
+}
+.p{
+    margin: 100px;
+    text-align: center;
+
+}
