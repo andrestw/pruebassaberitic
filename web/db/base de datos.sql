@@ -13,27 +13,27 @@
 
 
 -- Volcando estructura de base de datos para mydb
-DROP DATABASE IF EXISTS `mydb`;
-CREATE DATABASE IF NOT EXISTS `mydb` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `mydb`;
+DROP DATABASE IF EXISTS 'mydb';
+CREATE DATABASE IF NOT EXISTS 'mydb' /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE 'mydb';
 
 -- Volcando estructura para tabla mydb.preguntas
-DROP TABLE IF EXISTS `preguntas`;
-CREATE TABLE IF NOT EXISTS `preguntas` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `pregunta` text,
-  `opA` text,
-  `opB` text,
-  `opC` text,
-  `opD` text,
-  `correcta` text,
-  PRIMARY KEY (`id`)
+DROP TABLE IF EXISTS 'preguntas';
+CREATE TABLE IF NOT EXISTS 'preguntas' (
+  'id' int(11) NOT NULL AUTO_INCREMENT,
+  'pregunta' text,
+  'opA' text,
+  'opB' text,
+  'opC' text,
+  'opD' text,
+  'correcta' text,
+  PRIMARY KEY ('id')
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- Volcando datos para la tabla mydb.preguntas: ~9 rows (aproximadamente)
-DELETE FROM `preguntas`;
-/*!40000 ALTER TABLE `preguntas` DISABLE KEYS */;
-INSERT INTO `preguntas` (`id`, `pregunta`, `opA`, `opB`, `opC`, `opD`, `correcta`) VALUES
+DELETE FROM 'preguntas';
+/*!40000 ALTER TABLE 'preguntas' DISABLE KEYS */;
+INSERT INTO 'preguntas' ('id', 'pregunta', 'opA', 'opB', 'opC', 'opD', 'correcta') VALUES
 	(1, 'Parmenides  sostiene que todo lo que es es y no puede ser de otra manera, es decir, que no cambia,\r\na lo que se le puede objetar que esto es imposible, pues nosotros mismos experimentamos el\r\nmovimiento y, por lo tanto, el cambio; al punto que podriamos decir con Heraclito que nadie se baña\r\ndos veces en el mismo rio. Sin embargo, Parmenides defiende su posicion al mostrar que:', 'existen dos caminos, el de la apariencia y el de la verdad. Al primero corresponde el reposo\r\ny al segundo, el cambio.', 'la negacion del cambio permite la afirmacion del no-ser.', 'el ser es inmovil porque si se moviera deberia hacerlo sobre algo, lo que es imposible porque\r\nsolo hay un ser.', 'el cambio niega la multiplicidad y la temporalidad.', 'A'),
 	(2, 'La filosofia de Socrates se identificaba por el metodo utilizado, el cual era llamado mayeutica. So-\r\ncrates decia que el arte que utilizaba era similar al arte de las parteras, con la diferencia de que el\r\nlo que hacia era ayudar a los hombres en el parto del conocimiento. Ahora bien, asi como las comadronas,\r\nel no podia parir por el parturiento, solo ayudarlo y observar que el hijo naciera correctamente;\r\nes decir que', 'lo que perseguia Socrates con su metodo era producir conocimiento.', 'el filosofo griego no necesitaba parir conocimiento pues ya lo poseia.', 'la mayeutica tenia como finalidad hacer que el hombre descubriera la verdad por si mismo.', 'a partir del arte de la mayeutica el conocimiento fue concebido como un proceso doloroso.', 'C'),
 	(3, 'Para Socrates, la retorica es el arte de cues-tionarse a si mismo, a sus amigos, etc. Por lo tanto,\r\nno esta de acuerdo con la creencia de que la retorica es una herramienta en la busqueda del poder\r\ncomo algunos sostienen, pues aunque estos digan haber experimentado el poder gracias a ella, So-\r\ncrates les hace ver el verdadero papel de este arte al', 'presentar al poder como resultado accidental de la retorica y como algo perjudicial para los\r\nhombres.', 'mostrar que su unico fin es la busqueda de la verdad, por medio de lo cual acerca al hombre\r\na la belleza.', 'mostrar que ella es el camino escogido por los hombres virtuosos.', 'plantear que es un instrumento que libera al alma humana del mal.', 'B'),
@@ -43,24 +43,24 @@ INSERT INTO `preguntas` (`id`, `pregunta`, `opA`, `opB`, `opC`, `opD`, `correcta
 	(7, 'En sus Meditaciones Metafisicas, Descartes se enfrenta al problema de la duda generalizada sobre el\r\nconocimiento. Si es posible dudar de todo, es posible incluso dudar que se esta pensando. Sin embargo,\r\nesto resulta contradictorio porque el mismo proceso de duda es un acto de pensamiento. Asi,\r\naunque los sentidos nos engañen y no podamos saber si lo que percibimos es la realidad, podemos\r\ntener la certeza indudable de que estamos pensando. A partir de lo anterior, Descartes pasa a probar\r\nla existencia del sujeto pensante, pues si hay pensamiento debe haber un sujeto que piense y\r\nno puede haber pensamiento sin sujeto. Por lo tanto, si pienso entonces existo. De esta forma', 'la filosofia cartesiana busca explicar el conocimiento a partir de la percepcion.', 'el metodo de la duda permite encontrar los fundamentos del conocimiento.', 'si los sentidos nos engañan nunca tendremos certeza sobre nuestra existencia.', 'si un sujeto piensa entonces es engañado por sus sentidos.', 'C'),
 	(8, 'Kant afirmo “El hombre es un fin en si mismo”, esto implica que', 'el ser humano es autosuficiente.', 'el individuo debe olvidarse de sus propias necesidades y entregarse a los demas.', 'Dios es desplazado por el hombre.', 'en la busqueda de los bienes, cada hombre debe evitar utilizar a otro como medio.', 'D'),
 	(9, 'El problema de la ontologia clasica, el del ser en cuanto ser, es superado por una ontologia\r\ndel ser en tanto que siendo, es decir, existiendo. De esta forma, es posible decir\r\nque el acceso al ser solo se logra a partir de la reflexion sobre el hombre, quien es\r\nel unico ser que tiene conciencia de su ser, en la medida que', 'el hombre se interroga acerca del sentido de la existencia.', 'el hombre es mas que un objeto de existencia.', 'la existencia humana consiste en poder ser.', 'la existencia es ir mas alla de si mismo.', 'D');
-/*!40000 ALTER TABLE `preguntas` ENABLE KEYS */;
+/*!40000 ALTER TABLE 'preguntas' ENABLE KEYS */;
 
 -- Volcando estructura para tabla mydb.usuarios
-DROP TABLE IF EXISTS `usuarios`;
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombreUsuario` varchar(20) DEFAULT NULL,
-  `password` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+DROP TABLE IF EXISTS 'usuarios';
+CREATE TABLE IF NOT EXISTS 'usuarios' (
+  'id' int(11) NOT NULL AUTO_INCREMENT,
+  'nombreUsuario' varchar(20) DEFAULT NULL,
+  'password' varchar(20) DEFAULT NULL,
+  PRIMARY KEY ('id')
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- Volcando datos para la tabla mydb.usuarios: ~0 rows (aproximadamente)
-DELETE FROM `usuarios`;
-/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` (`id`, `nombreUsuario`, `password`) VALUES
+DELETE FROM 'usuarios';
+/*!40000 ALTER TABLE 'usuarios' DISABLE KEYS */;
+INSERT INTO 'usuarios' ('id', 'nombreUsuario', 'password') VALUES
 	(1, 'daniela', '123'),
 	(2, '1', '1');
-/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+/*!40000 ALTER TABLE 'usuarios' ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
